@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+body { 
+  background: #FEFEFE;
+  font-family: 'Lato', sans-serif; 
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+a, a:link, a:active, a:visited {
+  color: #2b7f87;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ba0069;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  box-shadow: none;
+}
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  box-shadow: none;
+}
+
+.btn {
+
+}
+
+.btn-primary {
+  background-color: #2b7f87;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ba0069;
+}
+
+.site-header .main-navigation a,
+.site-header .main-navigation a:link,
+.site-header .main-navigation a:active,
+.site-header .main-navigation a:visited {
+  color: #FFF;
+}
+
+.site-header .main-navigation a:hover {
+  color: #ba0069;
+}
+
+.main-navigation {
+  text-align: right;
+  padding: 0;
+  position: relative;
+}
+
+.main-navigation.toggled ul {
+  z-index: 100;
+}
+
+.main-navigation ul {
+  background: rgba(0,0,0,0.9);
+  position: absolute;
+  right: 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main-navigation ul li {
+  display: block;
+  padding: 5px 15px 5px 0;
+}
+
+.menu-toggle {
+  font-weight: 700;
+  height: 52px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: rgba(0,0,0,0.9);
+  color: #FFF;
+  display: inline-block;
+  padding: 0px 15px;
+  text-shadow: none;
+}
+
+.menu-toggle:hover {
+  box-shadow: none;
+  color: #ba0069;
+}
+
+/* Responsive Main Menu */
+@media screen and (min-width: 37.5em) {
+  .site-header .main-navigation a,
+  .site-header .main-navigation a:link,
+  .site-header .main-navigation a:active,
+  .site-header .main-navigation a:visited {
+    color: #333;
+  }
+
+  .site-header .main-navigation a:hover {
+    color: #ba0069;
+    text-decoration: underline;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-navigation {
+    padding: 15px 0;
+  }
+
+  .main-navigation ul {
+    background: none;
+    position: relative;
+    right: auto;
+    padding: 0;
+  }
+
+  .main-navigation ul li {
+    color: #333;
+    display: inline-block;
+    padding: 0;
+  }
+
+  .main-navigation li + li {
+    margin-left: 15px;
+  }
+}
+
+.main-navigation .current-menu-item {
+  text-decoration: underline;
+}
+
+.container { 
+  position: relative; 
+}
+
+#masthead {
+  /* Holly's Original Colour */
+  background: #76cad2; 
+  /* Turn up the lightness for contrast */
+  background: #aee1e5;
+  background-image: url('../img/hexpattern.png');
+  background-size: cover;
+}
+
+.site-header a, 
+.site-header a:link, 
+.site-header a:active, 
+.site-header a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-header a:hover {
+  color: #ba0069;
+}
+
+.site-header .main-navigation .current-menu-item a {
+  color: #ba0069;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  width: 125px;
+  z-index: 150;
+}
+
+.site-title {
+  /*margin: 85px 0 20px;*/
+  margin-bottom: 25px;
+}
+
+.hero {
+  /*background: #F5F5F5;*/
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.hero h1 {
+  /*text-transform: uppercase;*/
+  text-align: center;
+  margin-top: 0;
+}
+
+.hero p {
+  text-align: center;
+}
+
+.hero .hero-sub {
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+.hero-details {
+  margin-top: 15px;
+  border: 1px solid #aaa;
+}
+
+.hero-details .faux-crop {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.hero-details img {
+  width: 100%;
+}
+
+.hero-details h2 {
+  font-size: 1em;
+  text-align: center;
+  margin: 0.9em auto;
+  text-transform: uppercase;
+}
+
+.hero-details p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lookit {
+  background: #F5F5F5;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.lookit h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.lookit .lookit-sub {
+  text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+.lookit-details {
+  /*border: 1px solid #aaa;*/
+  padding: 10px;
+  text-align: center;
+}
+
+.lookit-details img {
+  margin-bottom: 10px;
+}
+
+.lookit-details h2 {
+  font-size: 1em;
+  text-align: center;
+  margin: 0.5em auto;
+  text-transform: uppercase;
+}
+
+.instagramz {
+  padding-bottom: 25px;
+}
+.instagramz h2 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.instagramz img {
+  margin-top: 25px;
+}
+
+.git {
+  background: #0a0a0a;
+  color: #efefef;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.site-footer {
+  color: #eee;
+  background: #5c5d63;
+}
+
+.site-info {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.footer-logos img {
+  height: 50px;
+}
+
+.copyright {
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+::selection {
+  background: #ba0069; /* WebKit/Blink Browsers */
+  color: #eee;
+}
+::-moz-selection {
+  background: #ba0069; /* Gecko Browsers */
+  color: #eee;
+}
+
+/* Special grid option for homepage */
+/*.col-md-2dot4 {
+  width: 20%;
+}*/
+
+/* vertical spacing on mobile */
+@media (max-width: 768px) {
+  .hero [class*="col-"]:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
