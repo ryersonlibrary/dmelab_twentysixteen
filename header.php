@@ -41,7 +41,7 @@
 			<div class="col-md-12 site-branding">
 				<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
 				<h1 class="site-title">
-					<a href="/">
+					<a href="<?php echo get_site_url(); ?>">
 						<span style="font-size: 0.7em">Ryerson Library's</span><br>
 						Digital Media Experience
 					</a>

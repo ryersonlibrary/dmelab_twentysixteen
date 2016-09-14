@@ -17,11 +17,11 @@
     <div class="col-md-6" style="text-align:right;">
       <h4>Hours</h4>
       <p>
-        Monday: 10am - 8pm<br>
-        Tuesday: 10am - 8pm<br>
-        Wednesday: 10am - 8pm<br>
+        Monday: 10am - 6pm<br>
+        Tuesday: 10am - 6pm<br>
+        Wednesday: 10am - 6pm<br>
         Thursday: 10am - 8pm<br>
-        Friday: 10am - 7pm<br>
+        Friday: 10am - 6pm<br>
         Saturday: CLOSED<br>
         Sunday: CLOSED
       </p>

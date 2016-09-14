@@ -30,7 +30,7 @@ get_header(); ?>
             <h2>For Students</h2>
             <p>
               Not sure where to start? We offer one-on-one tutorials to teach you to use emerging tech and Digital Media, including Virtual Reality, 3D Printing and Photoshop / Illustrator 
-              Supercharge your learning experience, <a href="/book-a-workshop">request a 30 minute session now.</a>
+              Supercharge your learning experience, <a href="/dmelab/book-workshop">request a 30 minute session now.</a>
             </p>
 
           </div>
@@ -43,7 +43,7 @@ get_header(); ?>
             </div>
             <h2>For Faculty</h2>
             <p>
-              The DME is here to augment and support your curriculum. We offer workshops in emerging technology and Digital Media Production techniques for the classroom. <a href="/book-a-workshop">Contact us to book a time.</a> 
+              The DME is here to augment and support your curriculum. We offer workshops in emerging technology and Digital Media Production techniques for the classroom. <a href="/dmelab/book-workshop">Contact us to book a time.</a> 
             </p>
           </div>
         </div>   
