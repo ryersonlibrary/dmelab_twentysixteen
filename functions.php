@@ -166,3 +166,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Ninja Forms customizations.
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+if (is_plugin_active( 'ninja-forms/ninja-forms.php' )) {
+  require get_stylesheet_directory() . '/inc/ninja_forms_customization.php';
+}
