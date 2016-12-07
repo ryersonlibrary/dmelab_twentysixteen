@@ -120,14 +120,6 @@ function _s_scripts() {
 
 	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom.css'  );
 
-	// Remove custom jQuery because Ninja Forms break. We don't _really_ need latest anyways
-	// // Include jQuery v1.11.3 when required.
-	// // WordPress admin also uses jQuery, to avoid conflicts use is_admin conditional tag
-	// if ( !is_admin() ) {
-	// 	wp_deregister_script('jquery');
-	// 	wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-1.12.4.min.js', array(), '1.12.4', true );
-	// }
-
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '20160603', true );
 
 	wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
