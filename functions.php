@@ -124,12 +124,18 @@ add_action( 'widgets_init', '_s_widgets_init' );
  * Enqueue scripts and styles.
  */
 function _s_scripts() {
+	/* CSS */
 	wp_enqueue_style( '_s-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css'  );
-
+	
+	// Our base styles	
 	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom.css'  );
 
+	// SimpleCalendar Plugin CSS tweaks
+	wp_enqueue_style( 'simple-calendar-tweaks', get_template_directory_uri() . '/css/simple-calendar-tweaks.css' );
+
+	/* JavaScript */
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '20160603', true );
 
 	wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
