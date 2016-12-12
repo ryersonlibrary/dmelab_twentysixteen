@@ -16,13 +16,19 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <div class="container hero">
-
+        <?php 
+        if ( is_active_sidebar( 'homepage-sidebar-1' ) ) {
+          $herocols = 4;
+        } else {
+          $herocols = 6;
+        }
+        ?>
         <div class="col-md-12">
           <h1>about DME</h1>
           <p class="hero-sub">The DME is a makerspace, fabrication lab and digital media production facility brought to you by the Ryerson Library!</p>
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-<?php echo $herocols ?>">
           <div class="hero-details">
             <div class="faux-crop">
               <img src="<?php bloginfo('stylesheet_directory') ?>/img/homepage-student.jpg" alt="Student Services at DME Lab">
@@ -36,7 +42,7 @@ get_header(); ?>
           </div>
         </div>      
         
-        <div class="col-sm-6">
+        <div class="col-sm-<?php echo $herocols ?>">
           <div class="hero-details">
             <div class="faux-crop">
               <img src="<?php bloginfo('stylesheet_directory') ?>/img/homepage-faculty.jpg" alt="Faculty Services at DME Lab">
@@ -47,6 +53,12 @@ get_header(); ?>
             </p>
           </div>
         </div>   
+
+        <?php if ( is_active_sidebar( 'homepage-sidebar-1' ) ) : ?>
+          <div class="widget-area col-md-4" role="complementary">
+            <?php dynamic_sidebar( 'homepage-sidebar-1' ); ?>
+          </div><!-- #primary-sidebar -->
+        <?php endif; ?>
 
       </div><!-- .container.hero -->
 
