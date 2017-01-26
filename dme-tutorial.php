@@ -39,16 +39,21 @@ get_header(); ?>
 
               <p><?php echo $rows[$lesson_index]['content']; ?></p>
 
-              <?php if ( $rows[$lesson_index]['downloads_repeater'] ) : ?>
-                <?php foreach ( $rows[$lesson_index]['downloads_repeater'] as $d ) : ?>
-                  <p><a href="<?php echo $d['file']; ?>"><?php echo $d['title']?></a></p>
-                <?php endforeach ?>
-              <?php endif; ?>
-
-              <?php if ( $rows[$lesson_index]['links_repeater'] ) : ?>
-                <?php foreach ( $rows[$lesson_index]['links_repeater'] as $l ) : ?>
-                  <p><a href="<?php echo $l['url']; ?>"><?php echo $l['title']?></a></p>
-                <?php endforeach ?>
+              <?php if ( $rows[$lesson_index]['downloads_repeater'] || $rows[$lesson_index]['links_repeater'] ) : ?>
+                <p>Additional Resources
+                <ul>
+                <?php if ( $rows[$lesson_index]['downloads_repeater'] ) : ?>
+                  <?php foreach ( $rows[$lesson_index]['downloads_repeater'] as $d ) : ?>
+                    <li><a href="<?php echo $d['file']; ?>"><?php echo $d['title']?></a></li>
+                  <?php endforeach ?>
+                <?php endif; ?>
+                <?php if ( $rows[$lesson_index]['links_repeater'] ) : ?>
+                  <?php foreach ( $rows[$lesson_index]['links_repeater'] as $l ) : ?>
+                    <li><a href="<?php echo $l['url']; ?>"><?php echo $l['title']?></a></li>
+                  <?php endforeach ?>
+                <?php endif; ?>
+                </ul>
+                </p>
               <?php endif; ?>
               
               <p>
