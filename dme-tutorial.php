@@ -41,7 +41,13 @@ get_header(); ?>
 
               <?php if ( $rows[$lesson_index]['downloads_repeater'] ) : ?>
                 <?php foreach ( $rows[$lesson_index]['downloads_repeater'] as $d ) : ?>
-                  <p><a href="<?php echo $d['file']; ?>"></a></p>
+                  <p><a href="<?php echo $d['file']; ?>"><?php echo $d['title']?></a></p>
+                <?php endforeach ?>
+              <?php endif; ?>
+
+              <?php if ( $rows[$lesson_index]['links_repeater'] ) : ?>
+                <?php foreach ( $rows[$lesson_index]['links_repeater'] as $l ) : ?>
+                  <p><a href="<?php echo $l['url']; ?>"><?php echo $l['title']?>/a></p>
                 <?php endforeach ?>
               <?php endif; ?>
               
