@@ -47,7 +47,7 @@ get_header(); ?>
 
               <?php if ( $rows[$lesson_index]['links_repeater'] ) : ?>
                 <?php foreach ( $rows[$lesson_index]['links_repeater'] as $l ) : ?>
-                  <p><a href="<?php echo $l['url']; ?>"><?php echo $l['title']?>/a></p>
+                  <p><a href="<?php echo $l['url']; ?>"><?php echo $l['title']?></a></p>
                 <?php endforeach ?>
               <?php endif; ?>
               
