@@ -39,7 +39,11 @@ get_header(); ?>
 
               <p><?php echo $rows[$lesson_index]['content']; ?></p>
 
-              <p><a href="<?php echo $rows[$lesson_index]['download']; ?>"><?php echo $rows[$lesson_index]['download']; ?></a></p>
+              <?php if ( $rows[$lesson_index]['downloads_repeater'] ) : ?>
+                <?php foreach ( $rows[$lesson_index]['downloads_repeater'] as $d ) : ?>
+                  <p><a href="<?php echo $d['file']; ?>"></a></p>
+                <?php endforeach ?>
+              <?php endif; ?>
               
               <p>
                 <a href="?lesson=<?php echo $lesson - 1 ?>">Previous Lesson</a>
