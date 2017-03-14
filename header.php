@@ -43,7 +43,7 @@
 				<h1 class="site-title">
 					<a href="<?php echo get_site_url(); ?>">
 						<span style="font-size: 0.7em">Isaac Olowolafe Jr.</span><br>
-						Digital Media Experience
+						Digital Media Experience Lab
 					</a>
 				</h1>
 				<?php
